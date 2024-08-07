@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';  // Importa el componente Link de Next.js
 import Button from '@/components/common/Button';  // Importa tu componente Button
 import ThemeSwitch from '@/components/common/ThemeSwitch';  // Importa tu componente ThemeSwitch
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDice } from '@fortawesome/free-solid-svg-icons';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +15,7 @@ const Header: React.FC = () => {
     <header className="bg-light-navbarBg dark:bg-dark-navbarBg p-4 flex justify-between items-center shadow-md relative">
       {/* Logo */}
       <Link href="/" className="flex items-center text-light-text dark:text-dark-text text-xl font-bold hover:underline">
-        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="45" fill="#3E3A60" stroke="#FFFFFF" strokeWidth="5" />
-          <text x="50" y="50" fontFamily="Arial, sans-serif" fontSize="24" fill="#FFFFFF" textAnchor="middle" alignmentBaseline="central" dy=".3em">AB</text>
-        </svg>
+        <FontAwesomeIcon icon={faDice} className="w-10 h-10 text-accent" />
         <span className="ml-2">Board Game Score Counter</span>
       </Link>
       

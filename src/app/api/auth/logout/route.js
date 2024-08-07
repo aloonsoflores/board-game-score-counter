@@ -1,5 +1,4 @@
 // src/app/api/auth/logout/route.js
-
 import { NextResponse } from "next/server";
 import cookie from "cookie";
 

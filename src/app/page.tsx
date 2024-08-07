@@ -13,11 +13,11 @@ const LandingPage: React.FC = () => {
         <h1 className="text-4xl font-bold mb-4">Cuenta las Puntuaciones de tus Juegos de Mesa de Forma Fácil</h1>
         <p className="text-lg mb-6">Nuestra aplicación te ayuda a llevar el control de puntuaciones para una variedad de juegos de mesa. Rápida, fácil y eficiente.</p>
         <Button>
-          <Link href="/signup">Empieza Ahora</Link>
+          <Link href="/home">Empieza Ahora</Link>
         </Button>
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <img src="/images/hero-image.png" alt="Board Game Score Counter" className="w-full max-w-md" />
-        </div>
+        </div> */}
       </section>
 
       {/* Features Section */}
@@ -69,7 +69,7 @@ const LandingPage: React.FC = () => {
         <h2 className="text-3xl font-bold mb-4">Listo para Empezar?</h2>
         <p className="text-lg mb-6">Únete a nosotros y comienza a disfrutar de una experiencia de juego mejorada hoy mismo.</p>
         <Button>
-          <Link href="/signup">Regístrate Ahora</Link>
+          <Link href="/register">Regístrate Ahora</Link>
         </Button>
       </section>
     </div>
